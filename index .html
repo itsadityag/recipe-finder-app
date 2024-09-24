@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Finder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-content">
+                <h1>Recipe Finder</h1>
+                <div class="search-container">
+                    <input type="text" id="search" placeholder="Search for recipes...">
+                    <button id="searchButton">Search</button>
+                </div>
+                <p class="intro-text">Discover delicious recipes from around the world. Start by searching above!</p>
+            </div>
+        </header>
+        <main>
+            <section class="api-recipe-list">
+                <ul id="api-recipes"></ul>
+            </section>
+        </main>
+    </div>
+    <!-- Modal Structure -->
+    <div id="recipeModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <img id="modal-image" src="" alt="Recipe Image">
+            <h3 id="modal-title"></h3>
+            <p id="modal-source"></p>
+            <h4>Ingredients</h4>
+            <ul id="modal-ingredients"></ul>
+            <h4>Instructions</h4>
+            <p id="modal-instructions"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
